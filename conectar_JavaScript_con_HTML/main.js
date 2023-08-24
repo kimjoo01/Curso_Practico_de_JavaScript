@@ -1,29 +1,27 @@
 const h1 = document.querySelector('h1');
-const p = document.querySelector('p');
-const parrafito = document.querySelector('.parrafito');
-const pid = document.querySelector('#pid');
-const input = document.querySelector('input');
-const img = document.createElement('img');
+const input1 = document.querySelector('#calculo1');
+const input2 = document.querySelector('#calculo2');
+const btn = document.querySelector('#suma');
+const parrafo = document.querySelector('#parrafo');
+const operacion = document.querySelector('#operacion')
 
-console.log(h1);
-
-console.log({
-    h1,
-    p,
-    parrafito,
-    pid,
-    input
-});
-
-h1.innerHTML = "La oruga pepe";
-// console.log (h1.getAttribute('class'));
-// h1.setAttribute('class' , 'verde');
-
-h1.classList.add('rojo');
-h1.classList.remove('nexodo');
-
-input.value = "512365";
-
-img.src = "https://img.redbull.com/images/c_fill,w_2880,h_1460,g_auto,f_auto,q_auto/redbullcom/2023/4/19/mxdrfhmrauci8vbengho/rb19-main-hero";
-
-pid.append(img);
+function suma () {
+    const suma = Number(input1.value) + Number(input2.value);
+    parrafo.innerText = "= " + suma;
+    operacion.innerText = "+";
+}
+function resta () {
+    const resta = Number(input1.value) - Number(input2.value);
+    parrafo.innerText = "= " + resta;
+    operacion.innerText = "-";
+}
+function multi () {
+    const multi = Number(input1.value) * Number(input2.value);
+    parrafo.innerText = "= " + multi;
+    operacion.innerText = "x";
+}
+function divi () {
+    const divi = Number(input1.value) / Number(input2.value);
+    parrafo.innerText = "= " + divi;
+    operacion.innerText = "/";
+}

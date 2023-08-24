@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+
+header{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-color: black;
+    padding: 2rem;
+    height: 10vh;
+}
+.titulo {
+    font-size: 4rem;
+    color: white;
+}
+
+.calculadora{
+    width: 100%;
+    height: 85vh;
+    display: grid;
+    place-items: center;
+}
+.calculadora_container{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: 18rem;
+}
+#calculo1 {
+    justify-self: center;
+    width: 18rem;
+    height: 8rem;
+    margin: 1.5rem 0 1.5rem 0;
+    font-size: 5rem;
+}
+#calculo1::placeholder{
+    font-size: 1.5rem;
+}
+#operacion{
+    justify-self: center;
+    font-size: 5rem;
+}
+#calculo2 {
+    justify-self: center;
+    width: 18rem;
+    height: 8rem;
+    margin-top: 1.5rem;
+    font-size: 5rem;
+}
+#calculo2::placeholder{
+    font-size: 1.5rem;
+}
+.botones {
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: repeat(auto-fill, 9rem);
+}
+.botones button {
+    width: 8.5rem;
+    height: 8.5rem;
+    margin-bottom: 1.2rem;
+    font-size: 6rem;
+}
+#resta {
+    margin-left: 0.5rem;
+}
+#divi {
+    margin-left: 0.5rem;
+}
+#parrafo{
+    font-size: 4rem;
+    justify-self: center;
+}
+footer{
+    background-color: black;
+    height: 5vh;
+}
+footer p{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#calculo1:hover, #calculo2:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.botones button:hover {
+    background-color: chartreuse;
+}

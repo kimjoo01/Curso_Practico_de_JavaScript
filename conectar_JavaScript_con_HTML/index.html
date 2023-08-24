@@ -3,17 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manipulacion de DOM</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
 </head>
 <body>
-    <h1  class="nexodo">Manipulacion de DOM</h1>
 
-    <p>Esto es un parrafo</p>
-    <p class="parrafito">Esto es un parrafo con clasa</p>
-    <p id="pid">Esto en un parrafo con ID</p>
+    <header>
 
-    <input placeholder="Escribe algo aqui" />
+        <h1  class="titulo">Calculadora</h1>
+
+    </header>
+
+    <main>
+        <div class="calculadora">
+
+            <div class="calculadora_container">
+
+                <input id="calculo1" placeholder="ingrese primer numero" />
+                <p id="operacion">Type</p>
+                <input onchange="" id="calculo2" placeholder="Ingrese segundo numero" />
+
+                <div class="botones">
+                    <button id="suma" onclick = "suma()">+</button>
+                    <button id="resta" onclick = "resta()">-</button>
+                    <button id="multi" onclick = "multi()">x</button>
+                    <button id="divi" onclick = "divi()">/</button>
+                </div>
+                
+                <p id="parrafo">=</p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>hecho con amor</p>
+    </footer>
 
     <script src="./main.js"></script> 
+
 </body>
 </html>
