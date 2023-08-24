@@ -20,22 +20,26 @@
     <main>
         <div class="calculadora">
 
-            <div class="calculadora_container">
+            <form id="form">
 
-                <input id="calculo1" placeholder="ingrese primer numero" />
-                <p id="operacion">Type</p>
-                <input onchange="" id="calculo2" placeholder="Ingrese segundo numero" />
+                <div class="calculadora_container">
 
-                <div class="botones">
-                    <button id="suma" onclick = "suma()">+</button>
-                    <button id="resta" onclick = "resta()">-</button>
-                    <button id="multi" onclick = "multi()">x</button>
-                    <button id="divi" onclick = "divi()">/</button>
+                    <input id="calculo1" placeholder="ingrese primer numero" />
+                    <p id="operacion">Type</p>
+                    <input onchange="" id="calculo2" placeholder="Ingrese segundo numero" />
+    
+                    <div class="botones">
+                        <button type="button" id="suma">+</button>
+                        <button type="button" id="resta">-</button>
+                        <button type="button" id="multi">x</button>
+                        <button type="button" id="divi">/</button>
+                    </div>
+                    
+                    <p id="parrafo">=</p>
+    
                 </div>
-                
-                <p id="parrafo">=</p>
 
-            </div>
+            </form>
 
         </div>
 
