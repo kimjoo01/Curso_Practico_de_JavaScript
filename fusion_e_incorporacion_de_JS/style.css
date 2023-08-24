@@ -186,6 +186,92 @@ nav {
     margin-bottom: 0.4rem !important;
 }
 
+/* aside (produc detail y carrito) */
+
+.product-detail {
+    width: 36rem;
+    padding: 2.4rem;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    background-color: var(--white);
+  }
+  .title-container {
+    display: flex;
+    margin-bottom: 2rem;
+  }
+  .title-container img {
+    transform: rotate(180deg);
+    margin-right: 1.4rem;
+  }
+  .title {
+    font-size: var(--lg);
+    font-weight: bold;
+  }
+  .order {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.6rem;
+    align-items: center;
+    background-color: var(--text_input_field);
+    margin-bottom: 2.4rem;
+    border-radius: 0.8rem;
+    padding: 1rem 2.4rem;
+  }
+  .order p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+  }
+  .order p span:nth-child(1) {
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  .order p:nth-child(2) {
+    text-align: end;
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  .shopping-cart {
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 1.6rem;
+    margin-bottom: 2.4rem;
+    align-items: center;
+  }
+  .shopping-cart figure {
+    margin: 0;
+  }
+  .shopping-cart figure img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 2rem;
+    object-fit: cover;
+  }
+  .shopping-cart p:nth-child(2) {
+    color: var(--very_light_pink);
+    font-size: var(--md);
+  }
+  .shopping-cart p:nth-child(3) {
+    font-size: var(--md);
+    font-weight: bold;
+  }
+  .primary_button{
+    background-color: var(--hospital_green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    margin-bottom: 3.2rem;
+}
+
+.primary_button:hover, .primary_button:checked {
+    background-color: var(--apple_green);
+}
+
 @media (max-width: 1220px) {
     nav {
         padding: 0.8rem 1.2rem;
@@ -202,6 +288,9 @@ nav {
     .desktop_menu {
         display: none;
     }
+    .product-detail {
+        width: 100%;
+      }
 }
 @media (min-width: 1221px){
     .mobile_menu{
