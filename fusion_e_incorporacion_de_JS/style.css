@@ -28,6 +28,13 @@ body {
 .inactive {
     display: none !important;
 }
+.disable {
+    border-color: var(--hospital_green) !important;
+    color: var(--hospital_green) !important;
+    border-radius: 1.5rem !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
 
 .bold {
     font-weight: 300 !important;
@@ -54,6 +61,7 @@ nav {
     align-items: center;
     list-style: none;
     padding: 0;
+    cursor: pointer;
 }
 .navbar_left ul {
     margin: 0 3.2rem;
@@ -147,7 +155,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
+    height: 95vh;
     padding: 2.4rem;
     background-color: var(--white);
 }
@@ -165,6 +173,7 @@ nav {
     margin: 0;
     margin-top: 2.4rem;
     padding: 0;
+    cursor: pointer;
 }
 .mobile_menu ul:nth-child(1){
     border-bottom: 0.2rem solid var(--very_light_pink);
@@ -270,6 +279,63 @@ nav {
 
 .primary_button:hover, .primary_button:checked {
     background-color: var(--apple_green);
+}
+
+/* Cards contenedor */
+
+.cards_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 24rem);
+    gap: 2.6rem;
+    place-content: center;
+    margin: 2rem 0;
+}
+.product_card {
+    width: 24rem;
+}
+.product_card img{
+    width: 24rem;
+    height: 24rem;
+    border-radius: 2rem;
+    object-fit: cover;
+}
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.8rem;
+}
+.product_info div h1{
+    font-size: var(--md);
+    margin-bottom: 0.4rem;
+}
+.product_info div p{
+    color: var(--very_light_pink);
+    font-size: var(--sm);
+    margin: 0;
+}
+.product_info figure{
+    margin: 0;
+}
+.product_info figure img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+@media (max-width: 640px) {
+
+    .cards_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 14rem);
+    }
+    .product_card {
+        width: 14rem;
+    }
+    .product_card img{
+        width: 14rem;
+        height: 14rem;
+    }
+
 }
 
 @media (max-width: 1220px) {
