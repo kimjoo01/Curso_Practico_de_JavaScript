@@ -30,19 +30,19 @@ class producto{
     }
 }
 
-let bicicleta = new producto ("./Productos/pexels-photo-276517.jpeg", "$120", "Bicicleta", "others");
-let carroJuguete = new producto ("./Productos/carro_juguete.jpg", "$10", "carro de juguete", "toys");
-let camisetaNegra = new producto ("./Productos/camiseta_negra.jpg", "$9", "camiseta negra", "clothes");
-let muebleTv = new producto ("./Productos/mueble_televisor.jpg", "$150", "mueble televisor", "furnitures");
-let celularOppo = new producto ("./Productos/celulares-oppo.jpg", "$300", "calular oppo", "electronics");
-let faldaRosa = new producto ("./Productos/falda_rosa.jpg", "$15", "falda rosa", "clothes");
-let monopatin = new producto ("./Productos/monopatin.jpg", "$100", "Monopatin", "others");
-let sillon = new producto ("./Productos/sillon.jpg", "$90", "sillon", "furnitures");
-let smartwatch = new producto ("./Productos/smartwatch.jpg", "$250", "smartwatch", "electronics");
-let babyYoda = new producto ("./Productos/baby_yoda.jpg", "$30", "baby yoda", "toys");
-let camaDoble = new producto ("./Productos/cama_doble.jpg", "$150", "Cama doble", "furnitures");
-let muebleL = new producto ("./Productos/Mueble_L.jpg", "$100", "Mueble L", "furnitures");
-let vestidoVerde = new producto ("./Productos/Vestido_verde.jpg", "$30", "Vestido Verde", "clothes");
+let bicicleta = new producto ("./Productos/pexels-photo-276517.jpeg", "120", "Bicicleta", "others");
+let carroJuguete = new producto ("./Productos/carro_juguete.jpg", "10", "carro de juguete", "toys");
+let camisetaNegra = new producto ("./Productos/camiseta_negra.jpg", "9", "camiseta negra", "clothes");
+let muebleTv = new producto ("./Productos/mueble_televisor.jpg", "150", "mueble televisor", "furnitures");
+let celularOppo = new producto ("./Productos/celulares-oppo.jpg", "300", "calular oppo", "electronics");
+let faldaRosa = new producto ("./Productos/falda_rosa.jpg", "15", "falda rosa", "clothes");
+let monopatin = new producto ("./Productos/monopatin.jpg", "100", "Monopatin", "others");
+let sillon = new producto ("./Productos/sillon.jpg", "90", "sillon", "furnitures");
+let smartwatch = new producto ("./Productos/smartwatch.jpg", "250", "smartwatch", "electronics");
+let babyYoda = new producto ("./Productos/baby_yoda.jpg", "30", "baby yoda", "toys");
+let camaDoble = new producto ("./Productos/cama_doble.jpg", "150", "Cama doble", "furnitures");
+let muebleL = new producto ("./Productos/Mueble_L.jpg", "100", "Mueble L", "furnitures");
+let vestidoVerde = new producto ("./Productos/Vestido_verde.jpg", "30", "Vestido Verde", "clothes");
 
 productos.push(bicicleta, carroJuguete, vestidoVerde, camisetaNegra, muebleTv, celularOppo, muebleL, faldaRosa, monopatin, sillon, smartwatch, babyYoda, camaDoble);
 
@@ -119,7 +119,7 @@ function tarjetas_producto_All(){
             <img src=${producto.imagen} alt=${producto.nombre}>
             <div class="product_info">
                 <div>
-                    <h1>${producto.precio}</h1>
+                    <h1>$ ${producto.precio}</h1>
                     <p>${producto.nombre}</p>
                 </div>
                 <figure>
@@ -162,7 +162,7 @@ function tarjetas_producto_clothes(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -209,7 +209,7 @@ function tarjetas_producto_electronics(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -256,7 +256,7 @@ function tarjetas_producto_furnitures(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -303,7 +303,7 @@ function tarjetas_producto_toys(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -350,7 +350,7 @@ function tarjetas_producto_others(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -383,7 +383,7 @@ function tarjetas_producto_All_mobile(){
             <img src=${producto.imagen} alt=${producto.nombre}>
             <div class="product_info">
                 <div>
-                    <h1>${producto.precio}</h1>
+                    <h1>$ ${producto.precio}</h1>
                     <p>${producto.nombre}</p>
                 </div>
                 <figure>
@@ -415,7 +415,7 @@ function tarjetas_producto_clothes_mobile() {
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -450,7 +450,7 @@ function tarjetas_producto_electronics_mobile() {
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -485,7 +485,7 @@ function tarjetas_producto_furnitures_mobile() {
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -520,7 +520,7 @@ function tarjetas_producto_toys_mobile(){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>
@@ -555,7 +555,7 @@ function tarjetas_producto_others_mobile (){
                 <img src=${productos[i].imagen} alt=${productos[i].nombre}>
                 <div class="product_info">
                     <div>
-                        <h1>${productos[i].precio}</h1>
+                        <h1>$ ${productos[i].precio}</h1>
                         <p>${productos[i].nombre}</p>
                     </div>
                     <figure>

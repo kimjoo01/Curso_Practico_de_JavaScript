@@ -153,9 +153,11 @@ nav {
     position: absolute;
     top: 6rem;
     display: flex;
+    left: 0;
+    width: 100%;
     flex-direction: column;
     justify-content: space-between;
-    height: 95vh;
+    height: 85vh;
     padding: 2.4rem;
     background-color: var(--white);
 }
@@ -322,20 +324,67 @@ nav {
     height: 3.5rem;
 }
 
-@media (max-width: 640px) {
+/* Detalles del producto */
 
-    .cards_container {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 14rem);
-    }
-    .product_card {
-        width: 14rem;
-    }
-    .product_card img{
-        width: 14rem;
-        height: 14rem;
-    }
-
+.product-detail_secondary {
+    width: 36rem;
+    padding-bottom: 2.4rem;
+    position: absolute;
+    right: 0;
+    background-color: var(--white);
+}
+.product-detail-close {
+    padding: 0.7rem;
+    background: var(--white);
+    position: absolute;
+    top: 2.4rem;
+    left: 2.4rem;
+    z-index: 2;
+    border-radius: 100%;
+}
+.product-detail-close:hover {
+    cursor: pointer;
+}
+.product-detail_secondary > img:nth-child(2) {
+    width: 100%;
+    height: 36rem;
+    object-fit: cover;
+    border-radius: 0 0 2rem 2rem;
+}
+.product-info_secondary {
+margin: 2.4rem 2.4rem 0 2.4rem;
+}
+.product-info_secondary p:nth-child(1) {
+    font-weight: bold;
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+}
+.product-info_secondary p:nth-child(2) {
+    color: var(--very_light_pink);
+    font-size: var(--md);
+    margin-top: 0;
+    margin-bottom: 3.6rem;
+}
+.product-info_secondary p:nth-child(3) {
+    color: var(--very_light_pink);
+    font-size: var(--sm);
+    margin-top: 0;
+    margin-bottom: 3.6rem;
+}
+.add-to-cart-button {
+    background-color: var(--hospital_green);
+    border-radius: 0.8rem;
+    border: none;
+    color: var(--white);
+    width: 100%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 1220px) {
@@ -356,7 +405,21 @@ nav {
     }
     .product-detail {
         width: 100%;
-      }
+    }
+    .cards_container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 14rem);
+    }
+    .product_card {
+        width: 14rem;
+    }
+    .product_card img{
+        width: 14rem;
+        height: 14rem;
+    }
+    .product-detail_secondary {
+        width: 100%;
+    }
 }
 @media (min-width: 1221px){
     .mobile_menu{
